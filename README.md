@@ -9,20 +9,22 @@ S-lab, Nanyang Technological University
 <div>
     <h4 align="center">
         <a href="https://atfortes.github.io/projects/bokeh-diffusion/" target='_blank'>
-        <img src="https://img.shields.io/badge/🐳-Project%20Page-blue">
+        <img src="https://img.shields.io/badge/🏠-Project%20Page-blue">
         </a>
-        <a href="" target='_blank'>
-        <img src="https://img.shields.io/badge/arXiv-coming_soon-b31b1b.svg">
+        <a href="https://arxiv.org/abs/2503.08434" target='_blank'>
+        <img src="https://img.shields.io/badge/arXiv-2503.08434-b31b1b.svg">
         </a>
         <img src="https://api.infinitescript.com/badgen/count?name=atfortes/bokeh-diffusion&ltext=Visitors&color=3977dd">
     </h4>
 </div>
 
-**Bokeh Diffusion enables precise, scene-consistent bokeh transitions in text-to-image diffusion models.**
+**Bokeh Diffusion enables precise, scene-consistent bokeh transitions in text-to-image diffusion models**
 
 ![teaser](./assets/teaser.png)
 
-<p align="center">🚀✨🚧 We are working hard on releasing the code... 🔧🛠️💻 Stay tuned! 🚧✨🚀</p>
+🎥 For more visual results, check out our <a href="https://atfortes.github.io/projects/bokeh-diffusion/" target="_blank">project page</a>
+
+🚀✨🚧 We are working hard on releasing the code... 🔧🛠️💻 Stay tuned! 🚧✨🚀
 
 </div>
 
@@ -49,8 +51,6 @@ Bokeh Diffusion combines three key components to produce lens-like bokeh without
 
 ![method](./assets/method.png)
 
-🎥 For visual results, check out our <a href="https://atfortes.github.io/projects/bokeh-diffusion/" target="_blank">project page</a>
-
 ## 📑 Citation
 
 If you find our work useful, please cite the following paper:
@@ -59,7 +59,7 @@ If you find our work useful, please cite the following paper:
 @article{fortes2025bokeh,
     title     = {Bokeh Diffusion: Defocus Blur Control in Text-to-Image Diffusion Models},
     author    = {Fortes, Armando and Wei, Tianyi and Zhou, Shangchen and Pan, Xingang},
-    journal   = {arXiv preprint},
+    journal   = {arXiv preprint arXiv:2503.08434},
     year      = {2025},
 }
 ```

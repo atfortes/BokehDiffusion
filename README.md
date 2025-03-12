@@ -14,7 +14,7 @@ S-lab, Nanyang Technological University
         <a href="https://arxiv.org/abs/2503.08434" target='_blank'>
         <img src="https://img.shields.io/badge/arXiv-2503.08434-b31b1b.svg">
         </a>
-        <img src="https://api.infinitescript.com/badgen/count?name=atfortes/BokehDiffusion&ltext=Visitors&color=3977dd">
+<!--         <img src="https://visitor-badge.glitch.me/badge?page_id=atfortes.BokehDiffusion" alt="visitor badge"> -->
     </h4>
 </div>
 

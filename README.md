@@ -41,11 +41,11 @@ S-lab, Nanyang Technological University
 
 Bokeh Diffusion combines three key components to produce lens-like bokeh without altering scene structure:
 
-**(1) Hybrid Dataset Pipeline:** We merge real in-the-wild images (for realistic bokeh and diverse scenes) with synthetic blur augmentations (for constrastive pairs). This approach anchors defocus realism while ensuring robust examples for training.
+**(1) Hybrid Dataset Pipeline:** We merge real in-the-wild images (for realistic bokeh and diversity) with synthetic blur augmentations (for constrastive pairs). This approach anchors defocus realism while ensuring robust examples for training.
 
 ![dataset](./assets/dataset.png)
 
-**(2) Defocus Blur Conditioning:** We inject a physically interpretable blur parameter (ranging from **0** to **30**) via decoupled cross-attention at the deeper layers of the U-Net. This preserves semantic features while controlling the defocus level.
+**(2) Defocus Blur Conditioning:** We inject a physically interpretable blur parameter (ranging from **0** to **30**) via decoupled cross-attention.
 
 **(3) Grounded Self-Attention:** We designate a “pivot” image to anchor scene layout, ensuring consistent object placement across different blur levels. This prevents unintended content shifts when adjusting defocus.
 

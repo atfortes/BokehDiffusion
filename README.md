@@ -45,7 +45,7 @@ Bokeh Diffusion combines three key components to produce lens-like bokeh without
 
 ![dataset](./assets/dataset.png)
 
-**(2) Defocus Blur Conditioning:** We inject a physically interpretable blur parameter (ranging from **0** to **30**) via decoupled cross-attention.
+**(2) Defocus Blur Conditioning:** We inject a physically interpretable blur parameter via decoupled cross-attention.
 
 **(3) Grounded Self-Attention:** We designate a “pivot” image to anchor scene layout, ensuring consistent object placement across different blur levels. This prevents unintended content shifts when adjusting defocus.
 
@@ -63,6 +63,10 @@ If you find our work useful, please cite the following paper:
     year      = {2025},
 }
 ```
+
+## ©️ License
+
+This project is licensed under [NTU S-Lab License 1.0](https://github.com/atfortes/BokehDiffusion/blob/main/LICENSE). Redistribution and use should follow this license.
 
 ## 🤝 Acknowledgements
 

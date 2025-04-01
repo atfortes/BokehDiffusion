@@ -36,6 +36,7 @@ S-lab, Nanyang Technological University
 - [ ] Release Model Weights
 - [ ] Release Inference Code
 - [ ] Release Training Code
+- [ ] Release FLUX Version
 
 ## 🔎 Overview
 

@@ -37,6 +37,7 @@ S-lab, Nanyang Technological University
 - [ ] Release Inference Code
 - [ ] Release Training Code
 - [ ] Release FLUX Version
+- [ ] Release HuggingFace Demo
 
 ## 🔎 Overview
 

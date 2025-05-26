@@ -41,15 +41,15 @@ S-lab, Nanyang Technological University
 
 ## 🔎 Overview
 
-Bokeh Diffusion combines three key components to produce lens-like bokeh without altering scene structure:
+Bokeh Diffusion combines three key components to produce lens-like bokeh without altering the generated scene content:
 
-**(1) Hybrid Dataset Pipeline:** We merge real in-the-wild images (for realistic bokeh and diversity) with synthetic blur augmentations (for constrastive pairs). This approach anchors defocus realism while ensuring robust examples for training.
+**(1) Hybrid Dataset Pipeline:** We merge real in-the-wild images with synthetic bokeh augmentations. This approach ensures realism and diversity while also providing contrastive examples for training.
 
 ![dataset](./assets/dataset.png)
 
-**(2) Defocus Blur Conditioning:** We inject a physically interpretable blur parameter via decoupled cross-attention.
+**(2) Defocus Blur Conditioning:** A physically interpretable defocus blur parameter is injected via decoupled cross-attention.
 
-**(3) Grounded Self-Attention:** We designate a “pivot” image to anchor scene layout, ensuring consistent object placement across different blur levels. This prevents unintended content shifts when adjusting defocus.
+**(3) Grounded Self-Attention:** A *pivot* image anchors the generated scene, ensuring content preservation across bokeh levels.
 
 ![method](./assets/method.png)
 
@@ -78,4 +78,4 @@ We would like to thank the following projects that made this work possible:
 - [BokehMe](https://github.com/lucidrains/diffusion-models) provides the synthetic blur rendering engine for generating defocus augmentations.
 - [Depth-Pro](https://github.com/apple/ml-depth-pro) is used to estimate metric depth maps.
 - [RMBG v2.0](https://huggingface.co/briaai/RMBG-2.0) is used to generate foreground masks.
-- [Realistic-Vision](https://huggingface.co/SG161222/Realistic\_Vision\_V5.1\_noVAE) & [Cyber-Realistic](https://huggingface.co/cyberdelia/CyberRealistic) are used as the base models for generating the samples in the paper.
+- [FLUX](https://github.com/black-forest-labs/flux) & [Realistic-Vision](https://huggingface.co/SG161222/Realistic\_Vision\_V5.1\_noVAE) & [Cyber-Realistic](https://huggingface.co/cyberdelia/CyberRealistic) are used as the base models for generating the samples in the paper.

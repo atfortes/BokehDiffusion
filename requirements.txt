@@ -1,0 +1,9 @@
+accelerate==1.5.2
+diffusers==0.32.2
+transformers==4.50.1
+tokenizers
+datasets
+opencv-python
+gradio
+protobuf
+sentencepiece

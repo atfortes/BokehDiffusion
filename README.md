@@ -4,54 +4,63 @@
 
 **[Armando Fortes](https://atfortes.github.io/) &emsp; [Tianyi Wei](https://scholar.google.com/citations?user=-wfXmM4AAAAJ&hl=en) &emsp; [Shangchen Zhou](https://shangchenzhou.com) &emsp; [Xingang Pan](https://xingangpan.github.io)**
 
-S-lab, Nanyang Technological University  
+**S-lab, Nanyang Technological University**
 
-<div>
-    <h4 align="center">
-        <a href="https://atfortes.github.io/projects/bokeh-diffusion/" target='_blank'>
-        <img src="https://img.shields.io/badge/🏠-Project%20Page-blue">
-        </a>
-        <a href="https://arxiv.org/abs/2503.08434" target='_blank'>
-        <img src="https://img.shields.io/badge/arXiv-2503.08434-b31b1b.svg">
-        </a>
-<!--         <img src="https://visitor-badge.glitch.me/badge?page_id=atfortes.BokehDiffusion" alt="visitor badge"> -->
-    </h4>
-</div>
+[![Project Page](https://img.shields.io/badge/🏠-Project%20Page-blue.svg)](https://atfortes.github.io/projects/bokeh-diffusion/)
+[![arXiv](https://img.shields.io/badge/arXiv-2503.08434-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2503.08434)
+[![Dataset](https://img.shields.io/badge/🤗%20Dataset-BokehDiffusion-yellow.svg)](https://huggingface.co/datasets/atfortes/BokehDiffusion)
+[![Model](https://img.shields.io/badge/🤗%20Model-BokehDiffusion--FLUX-yellow.svg)](https://huggingface.co/atfortes/BokehDiffusion)
 
 **Bokeh Diffusion enables precise, scene-consistent bokeh transitions in text-to-image diffusion models**
 
-![teaser](./assets/teaser.png)
+![teaser](./assets/teaser.jpg)
 
-🎥 For more visual results, check out our <a href="https://atfortes.github.io/projects/bokeh-diffusion/" target="_blank">project page</a>
-
-🚀✨🚧 We are working hard on releasing the code... 🔧🛠️💻 Stay tuned! 🚧✨🚀
+🎥 For more visual results, check out our <a href="https://atfortes.github.io/projects/bokeh-diffusion/">***project page***</a>.
 
 </div>
 
 ## 📮 Update
+- [2025.09] The model checkpoint and inference code are released.
+- [2025.08] Bokeh Diffusion is conditionally accepted at SIGGRAPH Asia 2025! 😄🎉
 - [2025.03] This repo is created.
 
 ## 🚧 TODO
-- [ ] Release Dataset
-- [ ] Release Model Weights
-- [ ] Release Inference Code
-- [ ] Release Training Code
-- [ ] Release FLUX Version
+- [X] Release Dataset
+- [X] Release Model Weights
+- [X] Release Inference Code
 - [ ] Release HuggingFace Demo
+- [ ] Release Training Code
 
-## 🔎 Overview
+## ⚙️ Installation
+Our environment has been tested on CUDA 12.6.
+```
+git clone https://github.com/atfortes/BokehDiffusion.git
+cd BokehDiffusion
 
-Bokeh Diffusion combines three key components to produce lens-like bokeh without altering the generated scene content:
+conda create -n bokehdiffusion -c conda-forge python=3.10
+conda activate bokehdiffusion
+pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu126
+pip install flash-attn==2.7.4.post1 --no-build-isolation
+pip install -r requirements.txt
+```
 
-**(1) Hybrid Dataset Pipeline:** We merge real in-the-wild images with synthetic bokeh augmentations. This approach ensures realism and diversity while also providing contrastive examples for training.
+## 💡 Quick Start
+Unbounded image generation from text and bokeh level input:
+```
+python inference_flux.py \
+    --prompt "a well-loved book lies forgotten on a park bench beneath a towering tree, its pages gently ruffling in the wind" \
+    --bokeh_target 15.0
+```
+Grounded image generation for scene-consistency:
+```
+python inference_flux.py \
+    --prompt "a well-loved book lies forgotten on a park bench beneath a towering tree, its pages gently ruffling in the wind" \
+    --bokeh_target 0.0 4.0 8.0 12.0 18.0 28.0 \
+    --bokeh_pivot 15.0 \
+    --num_grounding_steps 24
+```
 
-![dataset](./assets/dataset.png)
-
-**(2) Defocus Blur Conditioning:** A physically interpretable defocus blur parameter is injected via decoupled cross-attention.
-
-**(3) Grounded Self-Attention:** A *pivot* image anchors the generated scene, ensuring content preservation across bokeh levels.
-
-![method](./assets/method.png)
+Refer to the inference script for further input options (*e.g., seed, inference steps, guidance scale*).
 
 ## 📑 Citation
 

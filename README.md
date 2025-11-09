@@ -28,7 +28,6 @@
 - [X] Release Dataset
 - [X] Release Model Weights
 - [X] Release Inference Code
-- [ ] Release HuggingFace Demo
 - [ ] Release Training Code
 
 ## ⚙️ Installation

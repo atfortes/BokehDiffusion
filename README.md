@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>Bokeh Diffusion: Defocus Blur Control in Text-to-Image Diffusion Models</h1>
+<h1><i>Bokeh Diffusion</i>: Defocus Blur Control in Text-to-Image Diffusion Models</h1>
 
 **[Armando Fortes](https://atfortes.github.io/) &emsp; [Tianyi Wei](https://scholar.google.com/citations?user=-wfXmM4AAAAJ&hl=en) &emsp; [Shangchen Zhou](https://shangchenzhou.com) &emsp; [Xingang Pan](https://xingangpan.github.io)**
 
@@ -10,6 +10,10 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2503.08434-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2503.08434)
 [![Dataset](https://img.shields.io/badge/🤗%20Dataset-BokehDiffusion-yellow.svg)](https://huggingface.co/datasets/atfortes/BokehDiffusion)
 [![Model](https://img.shields.io/badge/🤗%20Model-BokehDiffusion--FLUX-yellow.svg)](https://huggingface.co/atfortes/BokehDiffusion)
+
+***SIGGRAPH Asia 2025***
+
+---
 
 **Bokeh Diffusion enables precise, scene-consistent bokeh transitions in text-to-image diffusion models**
 

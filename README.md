@@ -70,11 +70,16 @@ Refer to the inference script for further input options (*e.g., seed, inference 
 If you find our work useful, please cite the following paper:
 
 ```bibtex
-@article{fortes2025bokeh,
-    title     = {Bokeh Diffusion: Defocus Blur Control in Text-to-Image Diffusion Models},
-    author    = {Fortes, Armando and Wei, Tianyi and Zhou, Shangchen and Pan, Xingang},
-    journal   = {arXiv preprint arXiv:2503.08434},
-    year      = {2025},
+@inproceedings{fortes2025bokeh,
+  title     = {Bokeh Diffusion: Defocus Blur Control in Text-to-Image Diffusion Models},
+  author    = {Fortes, Armando and Wei, Tianyi and Zhou, Shangchen and Pan, Xingang},
+  booktitle = {Proceedings of the SIGGRAPH Asia 2025 Conference Papers},
+  series    = {SA Conference Papers '25},
+  publisher = {ACM},
+  articleno = {160},
+  pages     = {1--11},
+  year      = {2025},
+  doi       = {10.1145/3757377.3763906}
 }
 ```
 
